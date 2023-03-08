@@ -1,0 +1,7 @@
+img{
+    width: 300px;/*ancho de la imagen*/
+    height: 300px;/*alto de la imagen*/
+}
+tr:hover{
+    background-color: aqua;
+}
