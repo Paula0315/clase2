@@ -20,3 +20,27 @@ input{
     background-color: blue;
 
 }
+body {
+    background-color: rgb(68, 138, 185);
+    /*color: aliceblue;*/
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+tr:hover {
+    background-color: gray;
+}
+
+
+/* Estilo por etiqueta */
+
+
+input:valid,
+textarea:valid {
+    background: green;
+}
+
+input:invalid,
+textarea:invalid {
+    background: red;
+}
+

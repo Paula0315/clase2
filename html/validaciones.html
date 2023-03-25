@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="formulario" method="post" action="/send.php">
+        <!-- Nombre de usuario. Obligatorio, entre 5-40 carácteres -->
+        Usuario:
+        <input type="text" name="nombre" placeholder="Por ejemplo, Juan"
+               minlength="5" maxlength="40" required />
+        <!-- Contraseña. Obligatorio, mínimo 11 carácteres -->
+        Password:
+        <input type="password" name="pass" placeholder="Contraseña"
+               minlength="11" required />
+    </form>
+    <form name="formulario" method="post" action="/send.php">
+        <!-- Nombre de usuario. Obligatorio, entre 5-40 carácteres
+           Sólo se permiten letras y números -->
+        <input type="text" name="nombre" placeholder="Su nombre de usuario"
+               minlength="5" maxlength="40" required pattern="[A-Za-z0-9]+" />
+    </form>
+
+    <form name="formulario" method="post" action="/send.php">
+        <!-- Modelo de coche. Obligatorio, opciones posibles: A1, A3, A4 y A15
+           Sólo se permiten letras y números -->
+        <input type="text" name="coche" placeholder="Su modelo de coche"
+               required pattern="A|a(1|3|4|15)"
+               title="Modelos posibles: A1, A3, A4 y A15" />
+    </form>
+    
+    <details>
+        <summary>Más información</summary>
+        <h2>PAUL WALKER</h2>
+        <img src="https://img.asmedia.epimg.net/resizer/OND688BB_1bLbBp9AoNXrTf8mU0=/644x362/cloudfront-eu-central-1.images.arcpublishing.com/diarioas/MGFBOII7INNTVBX42IOT4YUWAU.jpg" alt="Foto del sujeto" />
+      </details>
+
+      <dialog id="ms">
+        <p>¡Hola, soy un mensaje!</p>
+        <button id="close" onclick="document.getElementById('ms').close()">Ok!</button>
+      </dialog>
+      <button id="show" onclick="document.getElementById('ms').show()">Mostrar</button>
+
+      <h3 contenteditable>Título del artículo</h3>
+      <div contenteditable>
+        <p>Este es un párrafo de ejemplo del ejemplo en cuestión.</p>
+        <p>Con él se pretende mostrar el funcionamiento del atributo contentEditable.</p>
+      </div>
+
+      <div id="info" hidden>Información</div>
+<button onClick="toggleHidden('#info')">
+  Mostrar/ocultar información
+</button>
+    </body>
+</html>
